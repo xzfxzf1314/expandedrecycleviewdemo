@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:padding="30dp"
+            android:id="@+id/id_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:clickable="true"
+                android:id="@+id/id_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/id_tip"
+                    android:text="你需要开始检测了..."
+                    android:paddingLeft="10dp"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/id_attention"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/attention"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/id_expand_view"
+                android:visibility="gone"
+                android:paddingLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:layout_below="@id/id_top"
+                android:text="这是展开的view\n这是展开的view\n这是展开的view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
